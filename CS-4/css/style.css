@@ -1,0 +1,49 @@
+/* 
+Custom CSS - Extends Bootstrap
+
+Project: Case Study 4
+Team: Landon Rice, Sheldon C. Wright
+File: style.css;
+
+*/
+body {
+  color: #616161;
+}
+.jumbotron {
+  background-color: #0D47A1;
+  color: #BBDEFB;
+}
+.btn-primary {
+  background-color: #1565C0;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #fff;
+  color: #1565C0;
+}
+.display-3 {
+  color: #ffffff;
+}
+.btn-secondary {
+  background-color: #1565C0;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: #fff;
+  color: #1565C0;
+}
+h2 {
+  color: #0D47A1;
+}
+.btn-outline-success {
+  border: 1px solid #00B3C5;
+  color: #00B3C5;
+}
+.btn-outline-success:hover {
+  background: #00b3c5;
+  border: 1px solid #00B3C5;
+  color: #fff;
+}
+footer {
+  float: right;
+}
