@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Tutorial</title>
+
+    <!--
+    Project: Case Study 4
+    Team: Landon Rice, Sheldon C. Wright
+    File: htmltut.html
+    Date: 9/14/17-->
+  <link rel='stylesheet prefetch' href='https://getbootstrap.com/dist/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://getbootstrap.com/docs/4.0/examples/jumbotron/jumbotron.css'>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <a class="navbar-brand" href="#" style="color: #0D47A1;">OTC Web Development</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tutorials
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="htmltut.html">HTML</a>
+            <a class="dropdown-item" href="csstut.html">CSS</a>
+            <a class="dropdown-item" href="jstut.html">JavaScript</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Main jumbotron for primary title -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">Basic HTML Tutorial</h1>
+    </div>
+  </div>
+  <div class="container">
+    <h3>
+      Getting Started
+    </h3>
+      <p>
+      Hypertext Markup Language, or HTML, is the standardized format for structuring a web page. An HTML document
+      consists solely of text and can be written in any text editor. Below are a few text editors for
+      Mac and PC, but feel free to use what is comfortable for you.
+      </p>
+    <br>
+    <br>
+    <div class="centered">
+      <p class="bold">For Windows:</p>
+      <a href="https://notepad-plus-plus.org/">Notepad++</a><br />
+      <a href="https://www.eclipse.org/downloads/?">Eclipse</a><br /><br />
+
+      <p class="bold">For Mac:</p>
+      <a href="https://www.barebones.com/products/bbedit/">BBEdit 11</a><br />
+      <a href="https://atom.io/">Atom</a><br />
+    </div>
+      <br />
+      <br />
+      <h3>Tags</h3>
+      <br />
+      <p>
+        To create a web page, you enter text that you want to display along with HTML code known as TAGS.
+        Tags label the content of a web page such as titles, headings, paragraphs and tables. They always begin with an opening bracket (<) and end with a closing bracket (>).
+
+        Every document starts with a DOCTYPE declaration, which provides information about the programming language
+        used to write the page. This is known as a one-sided tag because it does not have a closing pair.
+        Tag pairs are used to assign meaning to an element of a web page.
+      </p>
+      <br />
+      <br />
+      <br />
+
+      <h3>Elements</h3>
+      <br />
+      <p>
+        Elements are the building blocks of all web pages. They are specific components of a web page, such as a title, heading or paragraph.  To use an element,
+        you place an opening tag at the start of the element and a closing tag at the end.
+        Closing tags are the same as its opening tag except it includes a slash (/) after the opening angle bracket.
+      </p>
+      <br />
+      <br />
+
+      <div class="example">
+        <h4 class="underlined">Structure of a basic HTML Document</h4><br />
+        <p> &lt;!DOCTYPE html&gt;</p>
+        <p> &lt;html&gt;</p>
+        <p> &lt;head&gt;</p>
+        <p> &lt;title&gt;</p>
+        <p> &lt;/head&gt;</p>
+        <p> &lt;body&gt;</p><br />
+        <p> &lt;h1&gt; Heading &lt;/h1&gt;</p>
+        <p> &lt;p > Paragraph &lt;/h1></p>
+        <p> &lt;/body&gt;</p>
+        <p> &lt;/html&gt;</p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <h4 style="margin-left:100px; text-decoration: underline">Explanation of Example</h4><br />
+      <p style="margin-left:100px">
+        &#8226;DOCTYPE html - defines the document to be HTML5<br />
+        &#8226;html - element that is the root of any HTML page<br />
+        &#8226;head - element that contains meta information about the web page<br />
+        &#8226;title - element that specifies the title of the web page<br />
+        &#8226;body - element that contains the visable web page content<br />
+        &#8226;h1 - element that defines a heading. Can range from h1-h6 with h1 being the largest and h6 the smallest<br />
+        &#8226;p - element that defines a paragraph<br />
+      </p>
+      <br />
+      <br />
+
+      <h3>Adding Content to a Web Page</h3>
+      <br />
+      <p>
+        Adding text to a web page is simply finding the element you want to add content to and typing
+        between the opening and closing tags.
+      </p>
+      <br />
+      <br />
+      <div class="example">
+        <h4 class="underlined">Adding Text</h4><br />
+        <p> &lt;!DOCTYPE html&gt;</p>
+        <p> &lt;html&gt;</p>
+        <p> &lt;head&gt;</p>
+        <p>      &lt;title&gt; title of web page &lt;/title&gt;</p>
+        <p> &lt;/head&gt;</p>
+
+        <p> &lt;body&gt;</p><br />
+        <p>      &lt;h1&gt; heading text &lt;/hl&gt;</p>
+        <p>      &lt;p&gt; paragraph text &lt;/p&gt;</p>
+        <p> &lt;/body&gt;</p>
+        <p> &lt;/html&gt;</p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <h3>Using Comments</h3>
+      <br />
+      <p>
+        So far we have learned that HTML contains text that the browser displays, but there is
+        another important type called comments.  Comments are text elements that are not rendered
+        by the browser.  They are very helpful when creating large web sites or when collaborating with
+        a team. Comments can be used to explain a particular section or to test whether an element is
+        rendering properly. A common practice is to add a comment to the head section describing the
+        content, filename, author and the data which it was last modified.
+
+        In HTML, the only type of comment is the multi-line comment which begins
+        with < !-- and ends with -->.
+      </p>
+      <br />
+      <br />
+
+      <div class="example">
+        <h4 class="underlined">Adding Comments Example</h4><br />
+        <p> &lt;!DOCTYPE html ></p>
+        <p> &lt;html&gt;</p>
+        <p> &lt;head&gt;</p>
+        <p>      &lt;title&gt; title of web page &lt;/title&gt;</p>
+        <p>      &lt;!--
+                      description of web page
+                      Filename:
+                      Author:
+                      Date:
+                --&gt;</p>
+
+        <p> &lt;/head&gt;</p>
+
+        <p> &lt;body&gt;</p><br />
+        <p>      &lt;h1&gt; heading text &lt;/h1&gt;</p>
+        <p>      &lt;p&gt; paragraph text &lt;/p&gt;</p>
+        <p> &lt;/body&gt;</p>
+        <p> &lt;/html&gt;</p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <h3>Validating your HTML Document</h3>
+      <br />
+      <p>
+        Always validate your HTML code before uploading it! Validation is an automated process
+        of comparing the code you've written against the HTML5 coding standards.  It is a great
+        way of identifying a problem that causes your page not to render like it should.</p><br /><br />
+
+    <div class="centered">
+      <h4 class="underlined">Validition Services</h4><br />
+      <a href="https://validator.w3.org/" target="_blank">HTML</a><br /><br />
+      <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validation</a>
+    </div>
+
+      <footer>
+        <a class="btn btn-primary btn-md" role="button" href="https://www.otc.edu" target="_blank">OTC</a>
+      </footer>
+    </div>
+    <!-- /container -->
+    <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script>
+    <script src='https://getbootstrap.com/assets/js/vendor/popper.min.js'></script>
+    <script src='https://getbootstrap.com/dist/js/bootstrap.min.js'></script>
+    <script src='https://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js'></script>
+
+  </body>
+  </html>
