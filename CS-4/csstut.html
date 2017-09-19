@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>CSS</title>
+    <!--
+    Project: Case Study 4
+    Team: Landon Rice, Sheldon C. Wright
+    File: csstut.html
+    Date: 9/14/17-->
+
+  <link rel='stylesheet prefetch' href='https://getbootstrap.com/dist/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://getbootstrap.com/docs/4.0/examples/jumbotron/jumbotron.css'>
+  <link rel="stylesheet" href="tutstyles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <a class="navbar-brand" href="#" style="color: #0D47A1;">OTC Web Development</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tutorials
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="htmltut.html">HTML</a>
+            <a class="dropdown-item" href="csstut.html">CSS</a>
+            <a class="dropdown-item" href="jstut.html">JavaScript</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main jumbotron for primary title -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">Basic CSS Tutorial </h1>
+    </div>
+  </div>
+  <div class="container">
+    <h3>What is CSS?</h3>
+      <p>
+        Cascading Style Sheets (CSS) is a markup language used to specify how web page
+        elements should be rendered in a browser. It is most commonly used to set the visual
+        style of web pages and user interfaces written in HTML and XHTML, but we will only
+        be concerned with HTML.  CSS is a seperate language from HTML even thought they
+        both complement each other.  HTML specifies the content of each web page element,
+        while CSS indicates how that content should be displayed.  You create CSS code for
+        an HTML document by writing style rules.
+      </p>
+      <br />
+      <br />
+      <p class="centered"><strong>&#8226;Style rules </strong> - Lines or blocks of CSS code that specify
+        the presentation of web page elements.</p>
+      <br />
+      <br />
+
+      <h3 class="centered-underlined">Basic Concepts CSS is Built On</h3>
+      <br />
+      <h4>Properties</h4>
+      <p>
+        A property is an aspect of the appearance of a web page element that can be modified or changed.  For example,
+        you might want to center the text of the &lt;p&gt; element by using the text-align property. CSS property
+        names include hypens (-) instead of spaces.
+      </p>
+      <h4>Declarations</h4>
+      <p>
+        Declarations are the building block of all CSS code.  They are a combination of a property name and a value.
+        A declaration is enclosed within a pair of curly braces({ }).  Inside the braces, property names are followed by a colon (:),
+        the value and a semicolon (;) at the end.
+      </p>
+      <h4>Selectors</h4>
+      <p>
+        Selectors are used to associate declarations with web page elements.  CSS allows the use of many different
+        selectors.
+      </p>
+      <h5 class="underlined">Type Selectors</h5>
+      <p class="tab">
+        Type selectors are some of the most common selectors used and apply to all HTML elements of the same type.
+      </p>
+      <div class="example">
+        <h5 class="centered-underlined">Example of a style rule using a <strong>type selector</strong></h5>
+        <p class="tab">
+          p { <br />
+            text-align: center;<br />
+            background-color: ivory;<br />
+          }<br />
+        </p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <h5 class="underlined">ID Selectors</h5>
+      <p class="tab">
+        ID selectors are used when you make changes that only affect a single element.  Do this by giving the
+        element a unique identifier in its opening tag.
+      </p>
+      <div class="example">
+        <h6 class="centered-underlined">Assigning an ID to an element</h6>
+        <p class="tab">
+          <br />
+          &lt;h1 id="name"&gt;Lakeland Reeds Bed &amp; Breakfast&lt;/h1&gt;
+          <br />
+        </p>
+      </div>
+      <br />
+      <p class="centered">
+        When applying a style rule to an ID selector in the CSS stylesheet, simply put a pound sign (#) in
+        front of the ID.
+      </p>
+      <br />
+      <div class="example">
+        <h6 class="centered-underlined">Applying a style rule to an ID selector</h6>
+        <p class="tab">
+          <br />
+          #name { <br />
+            text-align: right; <br />
+          } <br />
+          <br />
+        </p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <h5 class="underlined">Class Selectors</h5>
+      <p class="tab">
+        Used when applying a style rule to multiple elements in a HTML document.  A class selector can be used
+        many times unlike the ID selector which is used once.
+      </p>
+
+
+      <div class="example">
+      <h6 class="centered-underlined">Assigning a class to an element</h6>
+      <p class="tab">
+        <br />
+        &lt;h1 class="name"&gt;Lakeland Reeds Bed &amp; Breakfast&lt;/h1&gt;
+        <br />
+      </p>
+    </div>
+    <br />
+    <p class="centered">
+      When applying a style rule to the class selector in the CSS stylesheet, add a period (.) in
+      front of the class name.
+    </p>
+    <br />
+    <div class="example">
+      <h6 class="centered-underlined">Applying a style rule to an class selector</h6>
+      <p class="tab">
+        <br />
+        .name { <br />
+          text-align: right; <br />
+        } <br />
+        <br />
+      </p>
+    </div>
+    <br />
+    <br />
+        <h3 class="centered-underlined">Types of Style Sheets</h3>
+        <br />
+        <br />
+        <h4>Embedded Style Sheet</h4>
+        <p>
+          In order to affect the presentation of elements in a single web page, you need to create
+          and embedded style sheet.  An embedded style sheet consists of CSS style rules entered
+          in the head of an HTML document.  When you add CSS styles to an HTML document, you must
+          nest them inside the &lt;style&gt;.
+        </p>
+        <br />
+
+
+        <!-- need to fix the line spacing -->
+        <div class="example">
+          <h6 class="centered-underlined">Creating an Embedded Style Sheet</h6>
+          <p class="tab">
+            &lt;head&gt;
+          </p>
+          <p style="margin-left: 100px;">&lt;style&gt; </p>
+          <p style="margin-left: 120px;">
+            body   { <br />
+              <p style="margin-left: 150px">
+              background-color: red; <br />
+              text-align: left; <br />
+            </p>
+          <p style="margin-left: 120px;">}</p>
+          <p style="margin-left: 100px;">&lt;style&gt;</p>
+          <p class="tab">&lt;head&gt;</p>
+        </div>
+        <br />
+
+        <h4>External Style Sheets</h4>
+        <p>
+          Embedded style sheets are great for single web pages, but what if you wanted the same
+          styles on multiple pages?  You would then use an external style sheet, which is a seperate
+          file containing the style rules that multiple web pages can link to. To incorporate an
+          external style sheet, you need to use the link element to refernce the location of the CSS file.
+        </p>
+        <br />
+        <div class="example">
+          <h6 class="centered-underlined">Linking to an External Style Sheet</h6>
+          <p class="tab">
+            <br />
+            &lt;link rel="stylesheet" href="styles.css"&gt; <br /> <br />
+          </p>
+        </div>
+        <br />
+        <p class="tab">
+          In this example, the rel attribute indicates the type of content in the linked file. The
+          href attribute specifies the filename of the style sheet.
+        </p>
+        <br />
+        <br />
+
+          <hr>
+
+          <footer>
+            <a class="btn btn-primary btn-md" role="button" href="https://www.otc.edu" target="_blank">OTC</a>
+          </footer>
+        </div>
+        <!-- /container -->
+        <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script>
+        <script src='https://getbootstrap.com/assets/js/vendor/popper.min.js'></script>
+        <script src='https://getbootstrap.com/dist/js/bootstrap.min.js'></script>
+        <script src='https://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js'></script>
+      </body>
+      </html>
